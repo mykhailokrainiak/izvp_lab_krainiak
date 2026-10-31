@@ -11,6 +11,12 @@ namespace TempConverter
             InitializeComponent();
         }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtValue.Clear();
+            lblResult.Text = string.Empty;
+        }
+
         private void btnToF_Click(object sender, EventArgs e)
         {
             if (double.TryParse(txtValue.Text, out double c))

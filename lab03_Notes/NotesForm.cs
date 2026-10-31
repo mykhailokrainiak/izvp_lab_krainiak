@@ -33,7 +33,7 @@ namespace Notes
         {
             using (var w = new StreamWriter(FileName))
                 foreach (var item in lstNotes.Items) w.WriteLine(item);
-            MessageBox.Show("Нотатки збережено");
+            MessageBox.Show($"Збережено нотаток: {lstNotes.Items.Count}");
         }
     }
 }
