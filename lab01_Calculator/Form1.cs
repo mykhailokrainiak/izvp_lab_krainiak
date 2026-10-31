@@ -47,5 +47,10 @@ namespace Calculator
             }
             lblResult.Text = (a / b).ToString();
         }
+
+        private void btnPow_Click(object sender, EventArgs e)
+        {
+            if (ReadNumbers(out double a, out double b)) lblResult.Text = Math.Pow(a, b).ToString();
+        }
     }
 }
