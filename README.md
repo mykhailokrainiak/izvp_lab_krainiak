@@ -8,3 +8,4 @@
 - lab02_TempConverter — конвертер температури
 - lab03_Notes — нотатки
 - lab04_Timer — секундомір
+- lab06_Files — робота з файлами
