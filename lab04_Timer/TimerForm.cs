@@ -6,12 +6,13 @@ namespace TimerApp
     // ЛР4 ІЗВП: секундомір на основі компонента Timer
     public partial class TimerForm : Form
     {
+        private const int TickMs = 1000;
         private int seconds;
 
         public TimerForm()
         {
             InitializeComponent();
-            timer1.Interval = 1000;
+            timer1.Interval = TickMs;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
