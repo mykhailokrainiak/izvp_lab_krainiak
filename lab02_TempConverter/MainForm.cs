@@ -22,5 +22,11 @@ namespace TempConverter
             if (double.TryParse(txtValue.Text, out double f))
                 lblResult.Text = $"{(f - 32) * 5 / 9:F1} °C";
         }
+
+        private void btnToK_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtValue.Text, out double c))
+                lblResult.Text = $"{c + 273.15:F2} K";
+        }
     }
 }
