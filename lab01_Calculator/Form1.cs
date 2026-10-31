@@ -37,6 +37,12 @@ namespace Calculator
             if (ReadNumbers(out double a, out double b)) lblResult.Text = (a * b).ToString();
         }
 
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(txtA.Text, out double a) && a >= 0)
+                lblResult.Text = Math.Sqrt(a).ToString();
+        }
+
         private void btnDiv_Click(object sender, EventArgs e)
         {
             if (!ReadNumbers(out double a, out double b)) return;
