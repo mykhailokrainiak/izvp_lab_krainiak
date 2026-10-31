@@ -17,5 +17,10 @@ namespace Colors
             pnlPreview.BackColor = Color.FromArgb(tbRed.Value, tbGreen.Value, tbBlue.Value);
             lblHex.Text = $"#{tbRed.Value:X2}{tbGreen.Value:X2}{tbBlue.Value:X2}";
         }
+
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(lblHex.Text);
+        }
     }
 }
